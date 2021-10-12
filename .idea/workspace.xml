@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de0014ae-6d39-4a91-ad2c-9813aa46e482" name="Default Changelist" comment="Java Version to heroku build">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/energy_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/scheduling_war.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/scheduling_war_exploded.xml" beforeDir="false" />
+    <list default="true" id="de0014ae-6d39-4a91-ad2c-9813aa46e482" name="Default Changelist" comment="Heroku jar">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Procfile" beforeDir="false" afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,7 +161,7 @@
       <workItem from="1633795505164" duration="6598000" />
       <workItem from="1634002342140" duration="2573000" />
       <workItem from="1634005006038" duration="1132000" />
-      <workItem from="1634006200817" duration="1854000" />
+      <workItem from="1634006200817" duration="2394000" />
     </task>
     <task id="LOCAL-00001" summary="Init Spring">
       <created>1630783300876</created>
@@ -231,7 +226,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634006590601</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Heroku jar">
+      <created>1634008083946</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1634008083946</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -260,7 +262,8 @@
     <MESSAGE value="Company REST" />
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="Java Version to heroku build" />
-    <option name="LAST_COMMIT_MESSAGE" value="Java Version to heroku build" />
+    <MESSAGE value="Heroku jar" />
+    <option name="LAST_COMMIT_MESSAGE" value="Heroku jar" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
