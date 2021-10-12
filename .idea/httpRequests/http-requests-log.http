@@ -1,0 +1,14 @@
+GET http://localhost:8080/api/company/{{id}}
+
+###
+
+GET http://localhost/resteasy-jackson/quarks
+
+###
+
+GET http://localhost:8080/api/company/companies
+
+<> 2021-09-04T185903.200.json
+
+###
+
