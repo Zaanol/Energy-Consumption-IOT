@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="de0014ae-6d39-4a91-ad2c-9813aa46e482" name="Default Changelist" comment="Heroku port">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Procfile" beforeDir="false" afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,7 +162,7 @@
       <workItem from="1633795505164" duration="6598000" />
       <workItem from="1634002342140" duration="2573000" />
       <workItem from="1634005006038" duration="1132000" />
-      <workItem from="1634006200817" duration="3193000" />
+      <workItem from="1634006200817" duration="3608000" />
     </task>
     <task id="LOCAL-00001" summary="Init Spring">
       <created>1630783300876</created>
@@ -253,7 +255,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634009204511</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Heroku port">
+      <created>1634009432375</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1634009432375</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
