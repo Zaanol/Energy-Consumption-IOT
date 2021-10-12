@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de0014ae-6d39-4a91-ad2c-9813aa46e482" name="Default Changelist" comment="Company REST" />
+    <list default="true" id="de0014ae-6d39-4a91-ad2c-9813aa46e482" name="Default Changelist" comment="Initial Commit">
+      <change afterPath="$PROJECT_DIR$/system.properties" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -157,7 +159,7 @@
       <workItem from="1633795505164" duration="6598000" />
       <workItem from="1634002342140" duration="2573000" />
       <workItem from="1634005006038" duration="1132000" />
-      <workItem from="1634006200817" duration="60000" />
+      <workItem from="1634006200817" duration="350000" />
     </task>
     <task id="LOCAL-00001" summary="Init Spring">
       <created>1630783300876</created>
@@ -208,7 +210,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633206285200</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Initial Commit">
+      <created>1634006327284</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1634006327284</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -235,7 +244,8 @@
     <MESSAGE value="[WIP] Spring Security JWT" />
     <MESSAGE value="Spring Security JWT" />
     <MESSAGE value="Company REST" />
-    <option name="LAST_COMMIT_MESSAGE" value="Company REST" />
+    <MESSAGE value="Initial Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -249,11 +259,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/zanol/scheduling/security/authentication/controller/AuthenticationController.java</url>
           <line>18</line>
           <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/zanol/energy/consumption/consumption/controller/ConsumptionController.java</url>
-          <line>20</line>
-          <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
