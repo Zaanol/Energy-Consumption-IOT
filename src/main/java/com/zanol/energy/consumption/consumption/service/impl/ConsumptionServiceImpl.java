@@ -38,17 +38,25 @@ public class ConsumptionServiceImpl implements ConsumptionService {
     public Optional<Consumption> update(Long id, Consumption consumption) {
         Optional<Consumption> consumptionData = consumptionRepository.findById(id);
 
-        return Optional.ofNullable(consumptionData.isPresent()
-                ? consumptionRepository.save(consumption)
-                : null
-        );
+        if (consumptionData.isPresent()) {
+            Consumption consData = consumptionData.get();
+
+            Consumption cons = new Consumption();
+            cons.setId(id);
+            cons.setChain(Objects.isNull(consumption.getChain()) ? consData.getChain() : consumption.getChain());
+            cons.setVoltage(Objects.isNull(consumption.getVoltage()) ? consData.getVoltage() : consumption.getVoltage());
+            cons.setDate(consData.getDate());
+
+            return Optional.of(consumptionRepository.save(cons));
+        } else {
+            return Optional.empty();
+        }
     }
 
     @Override
     public boolean delete(Long id) {
         boolean success = false;
 
-        consumptionRepository.deleteById(id);
         Optional<Consumption> consumptionData = consumptionRepository.findById(id);
 
         if (consumptionData.isPresent()) {

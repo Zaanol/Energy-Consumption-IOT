@@ -40,4 +40,11 @@ public class ConsumptionController {
                 .map(updated -> new ResponseEntity<>(updated, HttpStatus.OK))
                 .orElseGet(() -> new ResponseEntity<>(HttpStatus.NOT_FOUND));
     }
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Consumption> deleteUser(@PathVariable("id") Long id) {
+        return consumptionService.delete(id)
+                ? new ResponseEntity<>(HttpStatus.OK)
+                : new ResponseEntity<>(HttpStatus.NOT_FOUND);
+    }
 }
