@@ -4,10 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de0014ae-6d39-4a91-ad2c-9813aa46e482" name="Default Changelist" comment="Heroku port">
+    <list default="true" id="de0014ae-6d39-4a91-ad2c-9813aa46e482" name="Default Changelist" comment="Added delete route + fix update">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zanol/energy/consumption/consumption/controller/SystemController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zanol/energy/consumption/consumption/model/System.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zanol/energy/consumption/consumption/repository/SystemRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zanol/energy/consumption/consumption/service/SystemService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zanol/energy/consumption/consumption/service/impl/SystemServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zanol/energy/consumption/consumption/controller/ConsumptionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zanol/energy/consumption/consumption/controller/ConsumptionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zanol/energy/consumption/consumption/service/impl/ConsumptionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zanol/energy/consumption/consumption/service/impl/ConsumptionServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +72,7 @@
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -98,9 +103,11 @@
       <recent name="D:\SchedulingProject\scheduling\src\main\java\com\zanol\scheduling\security" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.zanol.energy.consumption.consumption.controller" />
+      <recent name="com.zanol.energy.consumption.consumption.repository" />
+      <recent name="com.zanol.energy.consumption.consumption.service" />
       <recent name="com.zanol.scheduling.security.authentication" />
       <recent name="com.zanol.scheduling.security.authentication.controller" />
-      <recent name="com.zanol.scheduling.security.authentication.repository" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.EnergyApplication">
@@ -163,7 +170,9 @@
       <workItem from="1634002342140" duration="2573000" />
       <workItem from="1634005006038" duration="1132000" />
       <workItem from="1634006200817" duration="3911000" />
-      <workItem from="1634048533606" duration="1138000" />
+      <workItem from="1634048533606" duration="2063000" />
+      <workItem from="1634335931913" duration="617000" />
+      <workItem from="1637967109824" duration="1181000" />
     </task>
     <task id="LOCAL-00001" summary="Init Spring">
       <created>1630783300876</created>
@@ -270,7 +279,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634009847681</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Added delete route + fix update">
+      <created>1634049948884</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1634049948884</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -301,7 +317,8 @@
     <MESSAGE value="Java Version to heroku build" />
     <MESSAGE value="Heroku jar" />
     <MESSAGE value="Heroku port" />
-    <option name="LAST_COMMIT_MESSAGE" value="Heroku port" />
+    <MESSAGE value="Added delete route + fix update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added delete route + fix update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -315,11 +332,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/zanol/scheduling/security/authentication/controller/AuthenticationController.java</url>
           <line>18</line>
           <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/zanol/energy/consumption/consumption/controller/ConsumptionController.java</url>
-          <line>45</line>
-          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
