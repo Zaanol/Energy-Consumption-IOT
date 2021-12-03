@@ -14,14 +14,18 @@ public class System {
 
     private LocalDateTime date = LocalDateTime.now();
     private Boolean online;
+    private Long maxCurrent;
+    private Long logReading;
 
     public System() {
     }
 
-    public System(Long id, LocalDateTime date, Boolean online) {
+    public System(Long id, LocalDateTime date, Boolean online, Long maxCurrent, Long logReading) {
         this.id = id;
         this.date = date;
         this.online = online;
+        this.maxCurrent = maxCurrent;
+        this.logReading = logReading;
     }
 
     public Long getId() {
@@ -46,5 +50,21 @@ public class System {
 
     public void setOnline(Boolean online) {
         this.online = online;
+    }
+
+    public Long getMaxCurrent() {
+        return maxCurrent;
+    }
+
+    public void setMaxCurrent(Long maxCurrent) {
+        this.maxCurrent = maxCurrent;
+    }
+
+    public Long getLogReading() {
+        return logReading;
+    }
+
+    public void setLogReading(Long logReading) {
+        this.logReading = logReading;
     }
 }

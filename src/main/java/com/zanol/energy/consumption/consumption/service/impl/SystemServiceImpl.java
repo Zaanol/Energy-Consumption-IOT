@@ -4,6 +4,8 @@ import com.zanol.energy.consumption.consumption.model.System;
 import com.zanol.energy.consumption.consumption.repository.SystemRepository;
 import com.zanol.energy.consumption.consumption.service.SystemService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.mail.SimpleMailMessage;
+import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -15,6 +17,9 @@ public class SystemServiceImpl implements SystemService {
 
     @Autowired
     SystemRepository systemRepository;
+
+    @Autowired
+    JavaMailSender mailSender;
 
     @Override
     public List<System> getAll() {
@@ -37,5 +42,10 @@ public class SystemServiceImpl implements SystemService {
                 ? systemRepository.save(system)
                 : null
         );
+    }
+
+    @Override
+    public void sendMail(SimpleMailMessage message) {
+        mailSender.send(message);
     }
 }

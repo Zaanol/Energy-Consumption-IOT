@@ -2,9 +2,11 @@ package com.zanol.energy.consumption.consumption.controller;
 
 import com.zanol.energy.consumption.consumption.model.System;
 import com.zanol.energy.consumption.consumption.service.SystemService;
+import com.zanol.energy.consumption.utils.EmailTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.mail.SimpleMailMessage;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -36,7 +38,11 @@ public class SystemController {
     @PostMapping("")
     public ResponseEntity<System> create(@RequestBody System system) {
         return systemService.create(system)
-                .map(created -> new ResponseEntity<>(created, HttpStatus.OK))
+                .map(created -> {
+                    if (!created.getOnline())
+                        systemService.sendMail(EmailTemplate.getSystemOffTemplate("willianzanoll@hotmail.com", system.getMaxCurrent(), system.getLogReading()));
+                    return new ResponseEntity<>(created, HttpStatus.OK);
+                })
                 .orElseGet(() -> new ResponseEntity<>(HttpStatus.CONFLICT));
     }
 }

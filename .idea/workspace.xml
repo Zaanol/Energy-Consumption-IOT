@@ -4,13 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de0014ae-6d39-4a91-ad2c-9813aa46e482" name="Default Changelist" comment="Added delete route + fix update">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zanol/energy/consumption/consumption/controller/SystemController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zanol/energy/consumption/consumption/model/System.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zanol/energy/consumption/consumption/repository/SystemRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zanol/energy/consumption/consumption/service/SystemService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zanol/energy/consumption/consumption/service/impl/SystemServiceImpl.java" afterDir="false" />
+    <list default="true" id="de0014ae-6d39-4a91-ad2c-9813aa46e482" name="Default Changelist" comment="System state routes">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_mail_jakarta_mail_1_6_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_mail_2_5_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_5_3_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zanol/energy/consumption/utils/EmailTemplate.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/energy.iml" beforeDir="false" afterPath="$PROJECT_DIR$/energy.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zanol/energy/consumption/consumption/controller/SystemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zanol/energy/consumption/consumption/controller/SystemController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zanol/energy/consumption/consumption/model/System.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zanol/energy/consumption/consumption/model/System.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zanol/energy/consumption/consumption/service/SystemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zanol/energy/consumption/consumption/service/SystemService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zanol/energy/consumption/consumption/service/impl/SystemServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zanol/energy/consumption/consumption/service/impl/SystemServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -172,7 +178,8 @@
       <workItem from="1634006200817" duration="3911000" />
       <workItem from="1634048533606" duration="2063000" />
       <workItem from="1634335931913" duration="617000" />
-      <workItem from="1637967109824" duration="1181000" />
+      <workItem from="1637967109824" duration="2300000" />
+      <workItem from="1638544030229" duration="2940000" />
     </task>
     <task id="LOCAL-00001" summary="Init Spring">
       <created>1630783300876</created>
@@ -286,7 +293,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634049948884</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="System state routes">
+      <created>1637968522721</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1637968522721</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -318,7 +332,8 @@
     <MESSAGE value="Heroku jar" />
     <MESSAGE value="Heroku port" />
     <MESSAGE value="Added delete route + fix update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added delete route + fix update" />
+    <MESSAGE value="System state routes" />
+    <option name="LAST_COMMIT_MESSAGE" value="System state routes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
