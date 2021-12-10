@@ -37,7 +37,7 @@ public class ConsumptionServiceImpl implements ConsumptionService {
 
     @Override
     public Optional<Consumption> create(Consumption consumption) {
-        consumption.setHourlyCost(consumption.getChain().multiply(consumption.getVoltage()));
+        consumption.setPotency(consumption.getChain().multiply(consumption.getVoltage()));
 
         return Optional.ofNullable(Objects.isNull(consumption.getId())
                 ? consumptionRepository.save(consumption)
@@ -80,15 +80,14 @@ public class ConsumptionServiceImpl implements ConsumptionService {
 
     @Override
     public Cost calculateCost() {
-        Optional<Consumption> opCon = consumptionRepository.findTopByOrderByIdDesc();
+        //Optional<Consumption> opCon = consumptionRepository.findTopByOrderByIdDesc();
 
         Optional<System> opSys = systemRepository.findTopByOrderByIdDesc();
 
-        if (opCon.isPresent() && opSys.isPresent()) {
+        if (opSys.isPresent()) {
             LocalDateTime startTime = LocalDateTime.now();
             LocalDateTime finishTime = LocalDateTime.now();
 
-            Consumption consumption = opCon.get();
             System system = opSys.get();
 
             if (system.getOnline()) {
@@ -108,16 +107,21 @@ public class ConsumptionServiceImpl implements ConsumptionService {
                 finishTime = system.getDate();
             }
 
-            BigDecimal potency = consumption.getHourlyCost().divide(new BigDecimal(1000));
-            Long seconds = ChronoUnit.SECONDS.between(startTime, finishTime);
+            BigDecimal potency = this.calculateAveragePotency(consumptionRepository.findByDateBetween(startTime, finishTime));
+            BigDecimal seconds = new BigDecimal(ChronoUnit.SECONDS.between(startTime, finishTime));
 
-            BigDecimal hours = new BigDecimal(seconds / 60.00 / 60.00);
+            BigDecimal bdCost = potency.multiply(seconds).multiply(new BigDecimal("0.0000001741"));
 
-            BigDecimal cost = potency.multiply(hours).multiply(new BigDecimal("0.626867"));
-
-            return new Cost(hours, potency, cost);
+            return new Cost(seconds, potency, bdCost);
         } else {
-            return null;
+            return new Cost();
         }
+    }
+
+    @Override
+    public BigDecimal calculateAveragePotency(List<Consumption> consumptions) {
+        return consumptions.stream()
+                .map(Consumption::getPotency)
+                .reduce(BigDecimal.ZERO, BigDecimal::add).divide(new BigDecimal(consumptions.size()));
     }
 }

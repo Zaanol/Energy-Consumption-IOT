@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="de0014ae-6d39-4a91-ad2c-9813aa46e482" name="Default Changelist" comment="Cost calculate route">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zanol/energy/consumption/consumption/model/Cost.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/zanol/energy/consumption/consumption/controller/ConsumptionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zanol/energy/consumption/consumption/controller/ConsumptionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zanol/energy/consumption/consumption/model/Consumption.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zanol/energy/consumption/consumption/model/Consumption.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zanol/energy/consumption/consumption/model/Cost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zanol/energy/consumption/consumption/model/Cost.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zanol/energy/consumption/consumption/repository/ConsumptionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zanol/energy/consumption/consumption/repository/ConsumptionRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/zanol/energy/consumption/consumption/service/ConsumptionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zanol/energy/consumption/consumption/service/ConsumptionService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/zanol/energy/consumption/consumption/service/impl/ConsumptionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zanol/energy/consumption/consumption/service/impl/ConsumptionServiceImpl.java" afterDir="false" />
     </list>
@@ -173,6 +175,7 @@
       <workItem from="1637967109824" duration="2300000" />
       <workItem from="1638544030229" duration="2940000" />
       <workItem from="1639094017851" duration="4003000" />
+      <workItem from="1639170166683" duration="1287000" />
     </task>
     <task id="LOCAL-00001" summary="Init Spring">
       <created>1630783300876</created>

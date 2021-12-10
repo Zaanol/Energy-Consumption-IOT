@@ -21,4 +21,6 @@ public interface ConsumptionService {
     boolean delete(Long id);
 
     Cost calculateCost();
+
+    BigDecimal calculateAveragePotency(List<Consumption> consumptions);
 }

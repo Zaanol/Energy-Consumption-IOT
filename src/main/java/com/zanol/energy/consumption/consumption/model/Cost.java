@@ -3,7 +3,7 @@ package com.zanol.energy.consumption.consumption.model;
 import java.math.BigDecimal;
 
 public class Cost {
-    BigDecimal hours;
+    BigDecimal seconds;
     BigDecimal potency;
     BigDecimal cost;
 
@@ -11,17 +11,17 @@ public class Cost {
     }
 
     public Cost(BigDecimal hours, BigDecimal potency, BigDecimal cost) {
-        this.hours = hours;
+        this.seconds = hours;
         this.potency = potency;
         this.cost = cost;
     }
 
-    public BigDecimal getHours() {
-        return hours;
+    public BigDecimal getSeconds() {
+        return seconds;
     }
 
-    public void setHours(BigDecimal hours) {
-        this.hours = hours;
+    public void setSeconds(BigDecimal seconds) {
+        this.seconds = seconds;
     }
 
     public BigDecimal getPotency() {
