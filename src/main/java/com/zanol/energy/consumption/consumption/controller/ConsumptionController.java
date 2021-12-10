@@ -1,6 +1,7 @@
 package com.zanol.energy.consumption.consumption.controller;
 
 import com.zanol.energy.consumption.consumption.model.Consumption;
+import com.zanol.energy.consumption.consumption.model.Cost;
 import com.zanol.energy.consumption.consumption.service.ConsumptionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -50,7 +51,7 @@ public class ConsumptionController {
     }
 
     @GetMapping("/calculate")
-    public ResponseEntity<BigDecimal> calculateCost() {
+    public ResponseEntity<Cost> calculateCost() {
         return new ResponseEntity<>(consumptionService.calculateCost(), HttpStatus.OK);
     }
 }

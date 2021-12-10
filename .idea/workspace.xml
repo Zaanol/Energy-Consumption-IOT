@@ -4,15 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de0014ae-6d39-4a91-ad2c-9813aa46e482" name="Default Changelist" comment="Add cors mappings">
+    <list default="true" id="de0014ae-6d39-4a91-ad2c-9813aa46e482" name="Default Changelist" comment="Cost calculate route">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zanol/energy/consumption/consumption/model/Cost.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/zanol/energy/consumption/consumption/controller/ConsumptionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zanol/energy/consumption/consumption/controller/ConsumptionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zanol/energy/consumption/consumption/model/Consumption.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zanol/energy/consumption/consumption/model/Consumption.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zanol/energy/consumption/consumption/model/System.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zanol/energy/consumption/consumption/model/System.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zanol/energy/consumption/consumption/repository/ConsumptionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zanol/energy/consumption/consumption/repository/ConsumptionRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/zanol/energy/consumption/consumption/service/ConsumptionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zanol/energy/consumption/consumption/service/ConsumptionService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/zanol/energy/consumption/consumption/service/impl/ConsumptionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zanol/energy/consumption/consumption/service/impl/ConsumptionServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zanol/energy/consumption/consumption/service/impl/SystemServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zanol/energy/consumption/consumption/service/impl/SystemServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,7 +172,7 @@
       <workItem from="1634335931913" duration="617000" />
       <workItem from="1637967109824" duration="2300000" />
       <workItem from="1638544030229" duration="2940000" />
-      <workItem from="1639094017851" duration="3706000" />
+      <workItem from="1639094017851" duration="4003000" />
     </task>
     <task id="LOCAL-00001" summary="Init Spring">
       <created>1630783300876</created>
@@ -303,7 +300,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639094622888</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Cost calculate route">
+      <created>1639097815659</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1639097815659</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -337,7 +341,8 @@
     <MESSAGE value="Added delete route + fix update" />
     <MESSAGE value="System state routes" />
     <MESSAGE value="Add cors mappings" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add cors mappings" />
+    <MESSAGE value="Cost calculate route" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cost calculate route" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -351,11 +356,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/zanol/scheduling/security/authentication/controller/AuthenticationController.java</url>
           <line>18</line>
           <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/zanol/energy/consumption/consumption/service/impl/ConsumptionServiceImpl.java</url>
-          <line>114</line>
-          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

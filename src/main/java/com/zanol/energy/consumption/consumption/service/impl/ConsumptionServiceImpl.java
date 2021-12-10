@@ -1,6 +1,7 @@
 package com.zanol.energy.consumption.consumption.service.impl;
 
 import com.zanol.energy.consumption.consumption.model.Consumption;
+import com.zanol.energy.consumption.consumption.model.Cost;
 import com.zanol.energy.consumption.consumption.model.System;
 import com.zanol.energy.consumption.consumption.repository.ConsumptionRepository;
 import com.zanol.energy.consumption.consumption.repository.SystemRepository;
@@ -78,7 +79,7 @@ public class ConsumptionServiceImpl implements ConsumptionService {
     }
 
     @Override
-    public BigDecimal calculateCost() {
+    public Cost calculateCost() {
         Optional<Consumption> opCon = consumptionRepository.findTopByOrderByIdDesc();
 
         Optional<System> opSys = systemRepository.findTopByOrderByIdDesc();
@@ -112,7 +113,9 @@ public class ConsumptionServiceImpl implements ConsumptionService {
 
             BigDecimal hours = new BigDecimal(seconds / 60.00 / 60.00);
 
-            return potency.multiply(hours).multiply(new BigDecimal("0.626867"));
+            BigDecimal cost = potency.multiply(hours).multiply(new BigDecimal("0.626867"));
+
+            return new Cost(hours, potency, cost);
         } else {
             return null;
         }

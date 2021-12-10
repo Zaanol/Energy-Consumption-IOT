@@ -1,6 +1,7 @@
 package com.zanol.energy.consumption.consumption.service;
 
 import com.zanol.energy.consumption.consumption.model.Consumption;
+import com.zanol.energy.consumption.consumption.model.Cost;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
@@ -19,5 +20,5 @@ public interface ConsumptionService {
 
     boolean delete(Long id);
 
-    BigDecimal calculateCost();
+    Cost calculateCost();
 }
