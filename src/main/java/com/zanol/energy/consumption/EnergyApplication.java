@@ -9,5 +9,4 @@ public class EnergyApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(EnergyApplication.class, args);
 	}
-
 }
