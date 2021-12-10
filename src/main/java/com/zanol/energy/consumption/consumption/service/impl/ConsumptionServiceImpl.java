@@ -98,7 +98,7 @@ public class ConsumptionServiceImpl implements ConsumptionService {
 
                     startTime = systemOnline.getDate();
 
-                    if (systemOnline.getOnline())
+                    if (!systemOnline.getOnline())
                         throw new RuntimeException("Break in the log sequence (Online - Offline)");
                 }
 
