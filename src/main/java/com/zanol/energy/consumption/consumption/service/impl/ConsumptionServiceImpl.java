@@ -80,8 +80,6 @@ public class ConsumptionServiceImpl implements ConsumptionService {
 
     @Override
     public Cost calculateCost() {
-        //Optional<Consumption> opCon = consumptionRepository.findTopByOrderByIdDesc();
-
         Optional<System> opSys = systemRepository.findTopByOrderByIdDesc();
 
         if (opSys.isPresent()) {
