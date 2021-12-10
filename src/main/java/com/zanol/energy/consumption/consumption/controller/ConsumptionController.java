@@ -7,6 +7,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.math.BigDecimal;
 import java.util.List;
 
 @RestController
@@ -46,5 +47,10 @@ public class ConsumptionController {
         return consumptionService.delete(id)
                 ? new ResponseEntity<>(HttpStatus.OK)
                 : new ResponseEntity<>(HttpStatus.NOT_FOUND);
+    }
+
+    @GetMapping("/calculate")
+    public ResponseEntity<BigDecimal> calculateCost() {
+        return new ResponseEntity<>(consumptionService.calculateCost(), HttpStatus.OK);
     }
 }

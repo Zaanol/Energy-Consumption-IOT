@@ -12,7 +12,7 @@ public class System {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private LocalDateTime date = LocalDateTime.now();
+    private LocalDateTime date;
     private Boolean online;
     private Long maxCurrent;
     private Long logReading;

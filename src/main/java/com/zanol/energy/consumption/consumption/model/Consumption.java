@@ -13,6 +13,7 @@ public class Consumption {
 
     private BigDecimal voltage;
     private BigDecimal chain;
+    private BigDecimal hourlyCost;
     private LocalDateTime date = LocalDateTime.now();
 
     public Consumption() {
@@ -47,6 +48,14 @@ public class Consumption {
 
     public void setChain(BigDecimal chain) {
         this.chain = chain;
+    }
+
+    public BigDecimal getHourlyCost() {
+        return hourlyCost;
+    }
+
+    public void setHourlyCost(BigDecimal hourlyCost) {
+        this.hourlyCost = hourlyCost;
     }
 
     public LocalDateTime getDate() {

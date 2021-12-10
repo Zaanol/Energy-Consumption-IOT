@@ -8,6 +8,7 @@ import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Objects;
 import java.util.Optional;
@@ -38,6 +39,8 @@ public class SystemServiceImpl implements SystemService {
 
     @Override
     public Optional<System> create(System system) {
+        system.setDate(LocalDateTime.now());
+
         return Optional.ofNullable(Objects.isNull(system.getId())
                 ? systemRepository.save(system)
                 : null
