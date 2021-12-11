@@ -10,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.time.LocalDateTime;
 import java.time.temporal.ChronoUnit;
 import java.util.List;
@@ -120,6 +121,6 @@ public class ConsumptionServiceImpl implements ConsumptionService {
     public BigDecimal calculateAveragePotency(List<Consumption> consumptions) {
         return consumptions.stream()
                 .map(Consumption::getPotency)
-                .reduce(BigDecimal.ZERO, BigDecimal::add).divide(new BigDecimal(consumptions.size()));
+                .reduce(BigDecimal.ZERO, BigDecimal::add).divide(new BigDecimal(consumptions.size()), RoundingMode.HALF_UP);
     }
 }
